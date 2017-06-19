@@ -1,25 +1,26 @@
-# Open and read a text file
+# Open a text file
 handle = open('sherlock-holmes.txt')
 
-email = handle.read()
+# Read the contents to full_text
+full_text = handle.read()
 
-# convert email to lowercase
-email = str.lower(email)
+# Convert all text to lowercase
+full_text = str.lower(full_text)
 
-# split words in email
-words = email.split()
+# Split words in email
+words = full_text.split()
 
-# add words to the list 'input_list'
+# Add words to the list 'input_list'
 input_list = list(words)
 
-# define the n_grams function
+# Define the n_grams function
 def find_ngrams(input_list, n):
   return zip(*[input_list[i:] for i in range(n)])
 
-# invoke the n_grams function and set n
+# Invoke the n_grams function and set n
 ngram_list = find_ngrams(input_list,6)
 
-# import counter
+# Import counter
 from collections import Counter
 
 # Tally occurrences of words in a list
