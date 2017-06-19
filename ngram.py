@@ -27,7 +27,7 @@ from collections import Counter
 cnt = Counter(ngram_list)
 
 # Print the number of items in the list
-print ('There are '+str(sum(cnt.values()))+' n-grams.')
+print ('There are '+str(sum(cnt.values()))+' n-grams in the file.')
 
 # Print the most common phrases
 print ('The most common n-grams are:')
