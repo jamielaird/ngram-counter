@@ -1,7 +1,7 @@
-# Open a text file
+# Open file handle
 handle = open('sherlock-holmes.txt')
 
-# Read the contents to full_text
+# Read the contents of the file
 full_text = handle.read()
 
 # Convert all text to lowercase
