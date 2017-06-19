@@ -1,5 +1,5 @@
 # Open file handle
-handle = open('sherlock-holmes.txt')
+handle = open('sample-email.txt')
 
 # Read the contents of the file
 full_text = handle.read()
@@ -17,8 +17,11 @@ input_list = list(words)
 def find_ngrams(input_list, n):
   return zip(*[input_list[i:] for i in range(n)])
 
+# Set the length of the n-gram
+n = 5
+
 # Invoke the n_grams function and set n
-ngram_list = find_ngrams(input_list,6)
+ngram_list = find_ngrams(input_list,n)
 
 # Import counter
 from collections import Counter
