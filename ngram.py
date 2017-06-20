@@ -4,27 +4,43 @@ import csv
 # Import the counter module
 from collections import Counter
 
+# Import the time module and set start time
+import time
+start_time = time.time()
+
 # Set the length of the ngram
 n = 3
 
 # Set the number of common ngrams to return
 c = 5
 
+# Print runtime info
+print ('------------------------')
+print ('Ngram length = '+str(n))
+print ('Number of common ngrams = '+str(c))
+
 # Define the ngrams function
 def find_ngrams(input_list, n):
     return zip(*[input_list[i:] for i in range(n)])
 
-print('----------------------------------------------')
-
+# Define the input and output files
+ihandle = 'C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Prepared Text/Salford_Emails.csv'
+ohandle = 'C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Python Output/ngrams.csv'
 
 # Create output file
-with open('C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Python Output/ngrams.csv', 'w', newline='') as csvfile:
+with open(ohandle, 'w', newline='') as csvfile:
     fieldnames = ['email', 'body', 'ngrams', 'top_ngrams']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
 
+# Print runtime info
+print ('Input file: '+ihandle)
+print ('Output file: '+ohandle)
+print ('------------------------')
+print ('Processing ngrams')
+
 # Read from csv file
-with open ('C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Prepared Text/Salford_Emails.csv') as csvfile:
+with open (ihandle) as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
 
@@ -47,23 +63,15 @@ with open ('C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Anal
         # Tally occurrences of ngrams for this piece of text
         cnt = Counter(ngram_list)
 
+        # Determine the top ngrams for this piece of text
+        top_ngrams = Counter(cnt).most_common(c)
+
         # Write current record to CSV
         with open('C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Python Output/ngrams.csv', 'a', newline='') as csvfile:
             fieldnames = ['email', 'body', 'ngrams', 'top_ngrams']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-            writer.writerow({'email':email, 'body':full_text, 'ngrams':Counter(cnt), 'top_ngrams':Counter(cnt).most_common(c)})
+            writer.writerow({'email':email, 'body':full_text, 'ngrams':Counter(cnt), 'top_ngrams':top_ngrams})
 
-        # Print the email address
-        print (email)
-
-        # Print the number of items in the list
-        print ('There are '+str(sum(cnt.values()))+' '+str(n)+'-grams in the file.')
-
-        # Print the full list of n-grams
-        print ('The full set of '+str(n)+'-grams is:')
-        print (Counter(cnt))
-
-        # Print the most common phrases
-        print ('The '+str(c)+' most common '+str(n)+'-grams are: ',(Counter(cnt).most_common(c)))
-
-        print('----------------------------------------------')
+# Print runtime info
+print ('------------------------')
+print('Completed in %s seconds' % (time.time() - start_time))
