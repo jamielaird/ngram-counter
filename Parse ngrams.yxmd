@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="42" y="90" />
+        <Position x="54" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -39,7 +39,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="246" y="90" />
+        <Position x="258" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -60,7 +60,7 @@
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="366" y="90" />
+        <Position x="378" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -80,7 +80,7 @@
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="486" y="90" />
+        <Position x="498" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -100,7 +100,7 @@
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-        <Position x="690" y="90" />
+        <Position x="702" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -120,7 +120,7 @@
     </Node>
     <Node ToolID="15">
       <GuiSettings>
-        <Position x="594" y="90" />
+        <Position x="606" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -142,15 +142,12 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
     </Node>
     <Node ToolID="19">
       <GuiSettings>
-        <Position x="798" y="90" />
+        <Position x="810" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -172,15 +169,12 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-        <Position x="906" y="90" />
+        <Position x="918" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -202,7 +196,7 @@
     </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
-        <Position x="1026" y="90" />
+        <Position x="1038" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -221,10 +215,10 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="RecordID" source="Formula: IF [_CurrentFieldName_] IN(&quot;ngrams&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;     IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;        0&#xA;         ELSE [_CurrentField_]&#xA;     ENDIF&#xA; ELSE [_CurrentField_]&#xA; ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
-            <Field name="crms_number" source="Formula: IF [_CurrentFieldName_] IN(&quot;ngrams&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;     IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;        0&#xA;         ELSE [_CurrentField_]&#xA;     ENDIF&#xA; ELSE [_CurrentField_]&#xA; ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
-            <Field name="email_id" source="Formula: IF [_CurrentFieldName_] IN(&quot;ngrams&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;     IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;        0&#xA;         ELSE [_CurrentField_]&#xA;     ENDIF&#xA; ELSE [_CurrentField_]&#xA; ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
-            <Field name="n" source="Formula: IF [_CurrentFieldName_] IN(&quot;ngrams&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;     IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;        0&#xA;         ELSE [_CurrentField_]&#xA;     ENDIF&#xA; ELSE [_CurrentField_]&#xA; ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Byte" />
+            <Field name="RecordID" source="Formula: IF [_CurrentFieldName_] IN(&quot;ngrams&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+            <Field name="crms_number" source="Formula: IF [_CurrentFieldName_] IN(&quot;ngrams&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+            <Field name="email_id" source="Formula: IF [_CurrentFieldName_] IN(&quot;ngrams&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+            <Field name="n" source="Formula: IF [_CurrentFieldName_] IN(&quot;ngrams&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Byte" />
             <Field description="TextToColumns: Parsed from ngrams" name="ngrams" size="1223" source="Formula: [_CurrentField_]" type="V_String" />
             <Field description="TextToColumns: Parsed from ngrams" name="ngrams_1" size="1220" source="TextToColumns: Parsed from ngrams" type="V_String" />
             <Field description="TextToColumns: Parsed from ngrams" name="ngrams_2" source="TextToColumns: Parsed from ngrams" type="Byte" />
@@ -235,7 +229,7 @@
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="42" y="246" />
+        <Position x="54" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -258,7 +252,7 @@
     </Node>
     <Node ToolID="24">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="354" y="750" />
+        <Position x="486" y="762" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -289,7 +283,7 @@
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="474" y="750" />
+        <Position x="606" y="762" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -308,7 +302,7 @@
     </Node>
     <Node ToolID="35">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
-        <Position x="150" y="90" />
+        <Position x="162" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -339,7 +333,7 @@
     </Node>
     <Node ToolID="36">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="138" y="750" />
+        <Position x="246" y="762" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -359,7 +353,7 @@
     </Node>
     <Node ToolID="37">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="234" y="750" />
+        <Position x="366" y="762" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -379,7 +373,7 @@
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="558" y="750" />
+        <Position x="690" y="762" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -400,37 +394,9 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="41">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="786" y="762" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\JAMIE~1.LAI\AppData\Local\Temp\Engine_1088_05164043b8d9490297c7ba0f797e6fd0_\Engine_13244_6280926b1f1e4032a12578b54fa9509d_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
     <Node ToolID="45">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-        <Position x="330" y="246" />
+        <Position x="150" y="378" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -450,7 +416,7 @@
     </Node>
     <Node ToolID="49">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="126" y="246" />
+        <Position x="162" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -471,7 +437,7 @@
     </Node>
     <Node ToolID="50">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="234" y="246" />
+        <Position x="54" y="378" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -493,37 +459,9 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="51">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="654" y="450" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\JAMIE~1.LAI\AppData\Local\Temp\Engine_1088_05164043b8d9490297c7ba0f797e6fd0_\Engine_13244_a86fb8bdd44242649713067fc01ec3c6_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
     <Node ToolID="52">
       <GuiSettings>
-        <Position x="426" y="246" />
+        <Position x="246" y="378" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -545,15 +483,12 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="558" y="258" />
+        <Position x="378" y="390" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -582,50 +517,9 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
     </Node>
-    <Node ToolID="55">
-      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="654" y="582" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <SummarizeFields>
-            <SummarizeField field="ngram_id" action="GroupBy" rename="ngram_id" />
-          </SummarizeFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-    </Node>
-    <Node ToolID="56">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="762" y="582" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\JAMIE~1.LAI\AppData\Local\Temp\Engine_1088_05164043b8d9490297c7ba0f797e6fd0_\Engine_13244_04dd410e243845b48df285d3f787db13_.yxdb</TempFile>
-          <Layout>
-            <View1>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
     <Node ToolID="57">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="966" y="426" />
+        <Position x="1398" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -639,7 +533,7 @@
             <Configuration outputConnection="Join">
               <OrderChanged value="False" />
               <SelectFields>
-                <SelectField field="Right_ngram_id" selected="True" rename="Right_ngram_id" />
+                <SelectField field="Right_ngram_id" selected="False" rename="Right_ngram_id" />
                 <SelectField field="*Unknown" selected="True" />
               </SelectFields>
             </Configuration>
@@ -647,41 +541,16 @@
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
+          <AnnotationText>Keep dictionary checked ngrams</AnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
     </Node>
-    <Node ToolID="58">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="354" y="366" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Passwords />
-          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\jamie.laird\OD\GitHub\ngram-counter\A-Zwords.yxdb</File>
-          <FormatSpecificOptions />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>A-Zwords.yxdb</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Field_1" size="254" source="File: C:\Users\jamie.laird\OD\GitHub\ngram-counter\Word lists in csv\*.csv" type="V_WString" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
-    </Node>
     <Node ToolID="60">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="690" y="258" />
+        <Position x="486" y="390" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -699,6 +568,7 @@
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
+          <AnnotationText>Cross tab results</AnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
@@ -719,37 +589,9 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
     </Node>
-    <Node ToolID="61">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="930" y="258" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\JAMIE~1.LAI\AppData\Local\Temp\Engine_1088_05164043b8d9490297c7ba0f797e6fd0_\Engine_13244_72eb184129514b3b83578c5022dcd903_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
     <Node ToolID="62">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
-        <Position x="798" y="258" />
+        <Position x="594" y="390" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -769,11 +611,207 @@
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
+          <AnnotationText>Transpose results</AnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="246" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\jamie.laird\OD\GitHub\ngram-counter\Word list\words_alpha.txt</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>\n</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>False</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>All English-language words
+
+words_alpha.txt</AnnotationText>
+          <DefaultAnnotationText>words_alpha.txt</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\jamie.laird\OD\GitHub\ngram-counter\Word list\words_alpha.txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="702" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>Value</Field>
+            <Operator>IsNotEmpty</Operator>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Remove if value is blank</AnnotationText>
+          <DefaultAnnotationText>!IsEmpty([Value])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="930" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="(Length([Value])-&#xA;Length(Replace([Value], ',', '')))&#xA;&#xA;+1" field="n2" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Calculate length of dictionary-checked ngram by adding 1 to the number of commas</AnnotationText>
+          <DefaultAnnotationText><![CDATA[n2 = (Length([Value])-
+Length(Replace([Value], ',', '')))
+
++1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1038" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[n]=[n2]" field="n1=n2" size="1" type="Bool" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Check that ngram length is the same before and after the dictionary check</AnnotationText>
+          <DefaultAnnotationText><![CDATA[n1=n2 = [n]=[n2]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="834" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" rename="n" type="Int32" size="4" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Rename fields</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1158" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>n1=n2</Field>
+            <Operator>IsTrue</Operator>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Only keep if ngram length has stayed the same after dictionary check</AnnotationText>
+          <DefaultAnnotationText>[n1=n2] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1278" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ngram_id" action="GroupBy" rename="ngram_id" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Summarise ngram ids to keep</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="798" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\jamie.laird\OD\GitHub\ngram-counter\ngrams.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Write results to file:
+
+ngrams.csv</AnnotationText>
+          <DefaultAnnotationText>ngrams.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
   </Nodes>
   <Connections>
@@ -839,7 +877,7 @@
     </Connection>
     <Connection>
       <Origin ToolID="38" Connection="Output" />
-      <Destination ToolID="41" Connection="Input" />
+      <Destination ToolID="70" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="45" Connection="Output" />
@@ -854,7 +892,7 @@
       <Destination ToolID="57" Connection="Left" />
     </Connection>
     <Connection>
-      <Origin ToolID="55" Connection="Output" />
+      <Origin ToolID="69" Connection="Output" />
       <Destination ToolID="57" Connection="Right" />
     </Connection>
     <Connection>
@@ -866,24 +904,12 @@
       <Destination ToolID="54" Connection="Left" />
     </Connection>
     <Connection>
-      <Origin ToolID="58" Connection="Output" />
+      <Origin ToolID="63" Connection="Output" />
       <Destination ToolID="54" Connection="Right" />
     </Connection>
     <Connection>
       <Origin ToolID="54" Connection="Join" />
-      <Destination ToolID="51" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="54" Connection="Join" />
-      <Destination ToolID="55" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="54" Connection="Join" />
       <Destination ToolID="60" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="55" Connection="Output" />
-      <Destination ToolID="56" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="57" Connection="Join" />
@@ -895,7 +921,27 @@
     </Connection>
     <Connection>
       <Origin ToolID="62" Connection="Output" />
-      <Destination ToolID="61" Connection="Input" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="True" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="True" />
+      <Destination ToolID="69" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
