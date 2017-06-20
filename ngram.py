@@ -8,7 +8,7 @@ from collections import Counter
 n = 3
 
 # Set the number of common ngrams to return
-c = 3
+c = 5
 
 # Define the ngrams function
 def find_ngrams(input_list, n):
