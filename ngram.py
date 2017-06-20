@@ -18,13 +18,13 @@ print('----------------------------------------------')
 
 
 # Create output file
-with open('ngrams.csv', 'w', newline='') as csvfile:
+with open('C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Python Output/ngrams.csv', 'w', newline='') as csvfile:
     fieldnames = ['email', 'body', 'ngrams', 'top_ngrams']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
 
 # Read from csv file
-with open ('sample-email.csv') as csvfile:
+with open ('C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Prepared Text/Salford_Emails.csv') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
 
@@ -48,7 +48,7 @@ with open ('sample-email.csv') as csvfile:
         cnt = Counter(ngram_list)
 
         # Write current record to CSV
-        with open('ngrams.csv', 'a', newline='') as csvfile:
+        with open('C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Python Output/ngrams.csv', 'a', newline='') as csvfile:
             fieldnames = ['email', 'body', 'ngrams', 'top_ngrams']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writerow({'email':email, 'body':full_text, 'ngrams':Counter(cnt), 'top_ngrams':Counter(cnt).most_common(c)})
