@@ -67,7 +67,7 @@ with open (ihandle) as csvfile:
         top_ngrams = Counter(cnt).most_common(c)
 
         # Write current record to CSV
-        with open('C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Python Output/ngrams.csv', 'a', newline='') as csvfile:
+        with open(ohandle, 'a', newline='') as csvfile:
             fieldnames = ['email', 'body', 'ngrams', 'top_ngrams']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writerow({'email':email, 'body':full_text, 'ngrams':Counter(cnt), 'top_ngrams':top_ngrams})
