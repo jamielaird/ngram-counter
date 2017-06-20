@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0515.2100                               -->
+<workbook source-build='10.3.0 (10300.17.0515.2100)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ngrams' inline='true' name='federated.1jar8140rx0anr1dxueok0lgr4g8' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ngrams' name='textscan.142hrtb0wjup3c11q8ggm0cze8lg'>
+            <connection class='textscan' directory='C:/Users/jamie.laird/OD/GitHub/ngram-counter' filename='ngrams.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.142hrtb0wjup3c11q8ggm0cze8lg' name='ngrams.csv' table='[ngrams#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='n' ordinal='0' />
+            <column datatype='string' name='ngram' ordinal='1' />
+            <column datatype='integer' name='frequency' ordinal='2' />
+            <column datatype='string' name='crms_numbers' ordinal='3' />
+            <column datatype='string' name='email_ids' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>n</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n]</local-name>
+            <parent-name>[ngrams.csv]</parent-name>
+            <remote-alias>n</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ngram</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ngram]</local-name>
+            <parent-name>[ngrams.csv]</parent-name>
+            <remote-alias>ngram</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>frequency</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[frequency]</local-name>
+            <parent-name>[ngrams.csv]</parent-name>
+            <remote-alias>frequency</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crms_numbers</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[crms_numbers]</local-name>
+            <parent-name>[ngrams.csv]</parent-name>
+            <remote-alias>crms_numbers</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>email_ids</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[email_ids]</local-name>
+            <parent-name>[ngrams.csv]</parent-name>
+            <remote-alias>email_ids</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ngrams.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ngram_clean' datatype='string' name='[Calculation_1207809144745934848]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='REPLACE(REPLACE(REPLACE(REPLACE([ngram],&quot;,&quot;,&quot;&quot;),&quot;&apos;&quot;,&quot;&quot;),&quot;(&quot;,&apos;&quot;&apos;),&quot;)&quot;,&apos;&quot;&apos;)' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Crms Numbers' datatype='string' name='[crms_numbers]' role='dimension' type='nominal' />
+      <column caption='Email Ids' datatype='string' name='[email_ids]' role='dimension' type='nominal' />
+      <column caption='Frequency' datatype='integer' name='[frequency]' role='measure' type='quantitative' />
+      <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+      <column caption='Ngram' datatype='string' name='[ngram]' role='dimension' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='C:/Users/jamie.laird/OD/GitHub/ngram-counter/Tableau/ngrams.tde' schema='Extract' tablename='Extract' update-time='06/20/2017 03:42:28 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='773180' timestamp-start='2017-06-20 15:42:28.518' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Count' datatype='integer'>773180</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>crms_numbers</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[crms_numbers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>crms_numbers</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ngrams.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>66038</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;102002&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;99659,99659&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>773180</statistic>
+                <statistic aggregation='Median' datatype='string'>&quot;131608&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>email_ids</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[email_ids]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>email_ids</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ngrams.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>68962</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;10009&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;9995,7183,19798&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>773180</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>frequency</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[frequency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>frequency</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ngrams.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>407</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>3108</statistic>
+                <statistic aggregation='Count' datatype='integer'>773180</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[n]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ngrams.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>2</statistic>
+                <statistic aggregation='Max' datatype='integer'>5</statistic>
+                <statistic aggregation='Count' datatype='integer'>773180</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ngram</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ngram]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ngram</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ngrams.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>773180</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;(&apos;0000hi&apos;, &apos;there&apos;, &apos;i&apos;, &apos;understand&apos;, &apos;that&apos;)&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;(&apos;zurich&apos;, &apos;university&apos;)&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>773180</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Reino Unido&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ngrams' name='federated.1jar8140rx0anr1dxueok0lgr4g8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jar8140rx0anr1dxueok0lgr4g8'>
+            <column caption='Ngram_clean' datatype='string' name='[Calculation_1207809144745934848]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='REPLACE(REPLACE(REPLACE(REPLACE([ngram],&quot;,&quot;,&quot;&quot;),&quot;&apos;&quot;,&quot;&quot;),&quot;(&quot;,&apos;&quot;&apos;),&quot;)&quot;,&apos;&quot;&apos;)' />
+            </column>
+            <column caption='Frequency' datatype='integer' name='[frequency]' role='measure' type='quantitative' />
+            <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+            <column caption='Ngram' datatype='string' name='[ngram]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1207809144745934848]' derivation='None' name='[none:Calculation_1207809144745934848:nk]' pivot='key' type='nominal' />
+            <column-instance column='[n]' derivation='None' name='[none:n:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[frequency]' derivation='Sum' name='[sum:frequency:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jar8140rx0anr1dxueok0lgr4g8].[none:Calculation_1207809144745934848:nk]'>
+            <groupfilter expression='CONTAINS(LOWER([Calculation_1207809144745934848]), LOWER(&apos;scholarship&apos;))' function='filter' user:ui-enumeration='inclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='scholarship' user:ui-pattern_type='contains'>
+              <groupfilter function='level-members' level='[none:Calculation_1207809144745934848:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <sort class='computed' column='[federated.1jar8140rx0anr1dxueok0lgr4g8].[none:Calculation_1207809144745934848:nk]' direction='DESC' using='[federated.1jar8140rx0anr1dxueok0lgr4g8].[sum:frequency:qk]' />
+          <filter class='quantitative' column='[federated.1jar8140rx0anr1dxueok0lgr4g8].[none:n:qk]' included-values='in-range'>
+            <min>2</min>
+            <max>5</max>
+          </filter>
+          <slices>
+            <column>[federated.1jar8140rx0anr1dxueok0lgr4g8].[none:Calculation_1207809144745934848:nk]</column>
+            <column>[federated.1jar8140rx0anr1dxueok0lgr4g8].[none:n:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1jar8140rx0anr1dxueok0lgr4g8].[none:Calculation_1207809144745934848:nk]' value='292' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1jar8140rx0anr1dxueok0lgr4g8].[none:Calculation_1207809144745934848:nk]</rows>
+        <cols>[federated.1jar8140rx0anr1dxueok0lgr4g8].[sum:frequency:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='ngrams' name='federated.1jar8140rx0anr1dxueok0lgr4g8' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1jar8140rx0anr1dxueok0lgr4g8'>
+        <column caption='Ngram_clean' datatype='string' name='[Calculation_1207809144745934848]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='REPLACE(REPLACE(REPLACE(REPLACE([ngram],&quot;,&quot;,&quot;&quot;),&quot;&apos;&quot;,&quot;&quot;),&quot;(&quot;,&apos;&quot;&apos;),&quot;)&quot;,&apos;&quot;&apos;)' />
+        </column>
+        <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+        <column-instance column='[Calculation_1207809144745934848]' derivation='None' name='[none:Calculation_1207809144745934848:nk]' pivot='key' type='nominal' />
+        <column-instance column='[n]' derivation='None' name='[none:n:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='90625' id='5' param='horz' type='layout-flow' w='100000' x='0' y='9375'>
+            <zone h='90625' id='3' type='layout-basic' w='99600' x='0' y='9375'>
+              <zone h='90625' id='1' name='Sheet 1' w='99600' x='0' y='9375' />
+            </zone>
+          </zone>
+          <zone fixed-size='824' h='9375' id='6' is-fixed='true' mode='pattern' name='Sheet 1' param='[federated.1jar8140rx0anr1dxueok0lgr4g8].[none:Calculation_1207809144745934848:nk]' type='filter' w='86000' x='0' y='0' />
+          <zone h='9375' id='8' name='Sheet 1' param='[federated.1jar8140rx0anr1dxueok0lgr4g8].[none:n:qk]' show-title='false' type='filter' w='14000' x='86000' y='0' />
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+      </viewpoints>
+      <active id='6' />
+    </window>
+  </windows>
+</workbook>
