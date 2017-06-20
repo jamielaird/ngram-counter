@@ -4,20 +4,16 @@ import csv
 # Import the counter module
 from collections import Counter
 
+# Import the itemgetter module
+from operator import itemgetter
+
 # Import the time module and set start time
 import time
 start_time = time.time()
 
 # Set the length of the ngram
-n = 5
-
-# Set the number of common ngrams to return
-c = 5
-
-# Print runtime info
-print ('------------------------')
-print ('Ngram length = '+str(n))
-print ('Number of common ngrams = '+str(c))
+n = input("Set ngram length: ")
+n = int(n)
 
 # Define the ngrams function
 def find_ngrams(input_list, n):
@@ -25,30 +21,36 @@ def find_ngrams(input_list, n):
 
 # Define the input and output files
 ihandle = 'C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Prepared Text/Salford_Emails.csv'
-ohandle = 'C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Python Output/Salford_5grams.csv'
+ohandle = 'C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Python Output/'+str(n)+'grams.csv'
 
 # Create output file
 with open(ohandle, 'w', newline='') as csvfile:
-    fieldnames = ['email', 'body', 'ngrams', 'top_ngrams']
+    fieldnames = ['crms_number', 'email_id', 'n', 'ngrams']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
 
 # Print runtime info
+print ('------------------------')
 print ('Input file: '+ihandle)
 print ('Output file: '+ohandle)
 print ('------------------------')
 print ('Processing ngrams')
 
-# Read from csv file
+# Open the target csv file
 with open (ihandle) as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
 
-        # Add contents of the body field to full_text
+        # Read from the specified fields
         full_text = row['body']
-        email = row['email']
+        crms_number = row['crms_number']
+        email_id = row['email_id']
 
-        # Convert all text to lowercase
+        # Convert crms_number and id to string
+        crms_number = str(crms_number)
+        email_id = str(email_id)
+
+        # Convert body text to lowercase
         full_text = str.lower(full_text)
 
         # Split words in email
@@ -63,14 +65,14 @@ with open (ihandle) as csvfile:
         # Tally occurrences of ngrams for this piece of text
         cnt = Counter(ngram_list)
 
-        # Determine the top ngrams for this piece of text
-        top_ngrams = Counter(cnt).most_common(c)
+        # Sort the dictionary by value
+        sorted(cnt.items(), key=itemgetter(0))
 
         # Write current record to CSV
         with open(ohandle, 'a', newline='') as csvfile:
-            fieldnames = ['email', 'body', 'ngrams', 'top_ngrams']
+            fieldnames = ['crms_number', 'email_id', 'n', 'ngrams']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-            writer.writerow({'email':email, 'body':full_text, 'ngrams':Counter(cnt), 'top_ngrams':top_ngrams})
+            writer.writerow({'crms_number':crms_number, 'email_id':email_id, 'n':str(n), 'ngrams':cnt})
 
 # Print runtime info
 print ('------------------------')
