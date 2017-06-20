@@ -16,10 +16,18 @@ def find_ngrams(input_list, n):
 
 print('----------------------------------------------')
 
+
+# Create output file
+with open('ngrams.csv', 'w', newline='') as csvfile:
+    fieldnames = ['email', 'body', 'ngrams', 'top_ngrams']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+
 # Read from csv file
 with open ('sample-email.csv') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
+
         # Add contents of the body field to full_text
         full_text = row['body']
         email = row['email']
@@ -39,13 +47,10 @@ with open ('sample-email.csv') as csvfile:
         # Tally occurrences of ngrams for this piece of text
         cnt = Counter(ngram_list)
 
-        # Create output file
-        with open('names10.csv', 'w', newline='') as csvfile:
+        # Write current record to CSV
+        with open('ngrams.csv', 'a', newline='') as csvfile:
             fieldnames = ['email', 'body', 'ngrams', 'top_ngrams']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-            # Write current record to CSV
-            writer.writeheader()
             writer.writerow({'email':email, 'body':full_text, 'ngrams':Counter(cnt), 'top_ngrams':Counter(cnt).most_common(c)})
 
         # Print the email address
