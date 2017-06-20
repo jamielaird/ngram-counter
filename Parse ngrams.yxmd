@@ -85,7 +85,7 @@
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="Replace([ngrams], '})', '')" field="ngrams" size="2147483647" type="V_String" />
+            <FormulaField expression="Replace([ngrams], '})', '')" field="ngrams" size="94137" type="V_String" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -235,7 +235,7 @@
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="42" y="234" />
+        <Position x="42" y="246" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -258,7 +258,7 @@
     </Node>
     <Node ToolID="24">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="378" y="234" />
+        <Position x="354" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -289,7 +289,7 @@
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="498" y="234" />
+        <Position x="474" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -305,238 +305,6 @@
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
-    </Node>
-    <Node ToolID="26">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="774" y="222" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\JAMIE~1.LAI\AppData\Local\Temp\Engine_18372_c6fce968e70b4365aea43b02812a3ec6_\Engine_13244_1cd6bc1af7d149e3a4ccc633a06bd7e6_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
-    <Node ToolID="27">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="678" y="234" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Mode>Simple</Mode>
-          <Simple>
-            <Field>n</Field>
-            <Operator>=</Operator>
-            <Operands>
-              <Operand>2</Operand>
-            </Operands>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[n] = 2</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
-    <Node ToolID="28">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="774" y="294" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Mode>Simple</Mode>
-          <Simple>
-            <Field>n</Field>
-            <Operator>=</Operator>
-            <Operands>
-              <Operand>3</Operand>
-            </Operands>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[n] = 3</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
-    <Node ToolID="29">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="870" y="282" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\JAMIE~1.LAI\AppData\Local\Temp\Engine_18372_c6fce968e70b4365aea43b02812a3ec6_\Engine_13244_728e0a3fbf4f4d0abe922426900c836b_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
-    <Node ToolID="30">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="870" y="354" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Mode>Simple</Mode>
-          <Simple>
-            <Field>n</Field>
-            <Operator>=</Operator>
-            <Operands>
-              <Operand>4</Operand>
-            </Operands>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[n] = 4</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
-    <Node ToolID="31">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="966" y="342" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\JAMIE~1.LAI\AppData\Local\Temp\Engine_18372_c6fce968e70b4365aea43b02812a3ec6_\Engine_13244_3e542e3b11d84581bfae1376f3bcb72b_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
-    <Node ToolID="32">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="966" y="426" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Mode>Simple</Mode>
-          <Simple>
-            <Field>n</Field>
-            <Operator>=</Operator>
-            <Operands>
-              <Operand>5</Operand>
-            </Operands>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[n] = 5</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
-    <Node ToolID="33">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1062" y="414" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\JAMIE~1.LAI\AppData\Local\Temp\Engine_18372_c6fce968e70b4365aea43b02812a3ec6_\Engine_13244_49c706b8cea6432d915aab508e597373_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
-    <Node ToolID="34">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1050" y="474" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\JAMIE~1.LAI\AppData\Local\Temp\Engine_18372_c6fce968e70b4365aea43b02812a3ec6_\Engine_13244_cc40c81b77444622b32551387372fabd_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
     <Node ToolID="35">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
@@ -571,7 +339,7 @@
     </Node>
     <Node ToolID="36">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="138" y="234" />
+        <Position x="138" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -591,7 +359,7 @@
     </Node>
     <Node ToolID="37">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="258" y="234" />
+        <Position x="234" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -611,7 +379,7 @@
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="582" y="234" />
+        <Position x="558" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -631,6 +399,381 @@
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="786" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JAMIE~1.LAI\AppData\Local\Temp\Engine_1088_05164043b8d9490297c7ba0f797e6fd0_\Engine_13244_6280926b1f1e4032a12578b54fa9509d_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="330" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>ngram</Field>
+          <NumFields value="1" />
+          <Delimeters value="," />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Split ngrams to rows</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="126" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ngram_id</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Add ngram id</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="234" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="False" />
+            <SelectField field="crms_number" selected="False" />
+            <SelectField field="email_id" selected="False" />
+            <SelectField field="frequency" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Select columns</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="654" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JAMIE~1.LAI\AppData\Local\Temp\Engine_1088_05164043b8d9490297c7ba0f797e6fd0_\Engine_13244_a86fb8bdd44242649713067fc01ec3c6_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings>
+        <Position x="426" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"ngram"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">True</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">True</Value>
+          <Value name="Check Box (70)">True</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Remove whitespace, numbers and punctuation</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="558" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ngram" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Field_1" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_Field_1" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Join with dictionary and output matched words</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="654" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ngram_id" action="GroupBy" rename="ngram_id" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="762" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JAMIE~1.LAI\AppData\Local\Temp\Engine_1088_05164043b8d9490297c7ba0f797e6fd0_\Engine_13244_04dd410e243845b48df285d3f787db13_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="966" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ngram_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ngram_id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_ngram_id" selected="True" rename="Right_ngram_id" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="354" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\jamie.laird\OD\GitHub\ngram-counter\A-Zwords.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>A-Zwords.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\jamie.laird\OD\GitHub\ngram-counter\Word lists in csv\*.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="690" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="ngram_id" />
+            <Field field="n" />
+          </GroupFields>
+          <HeaderField field="n" />
+          <DataField field="ngram" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ngram_id" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="n" source="CrossTab:Group:Concat:" type="Byte" />
+            <Field name="2" size="2048" source="CrossTab:Header:n:2:Concat:" type="V_String" />
+            <Field name="3" size="2048" source="CrossTab:Header:n:3:Concat:" type="V_String" />
+            <Field name="4" size="2048" source="CrossTab:Header:n:4:Concat:" type="V_String" />
+            <Field name="5" size="2048" source="CrossTab:Header:n:5:Concat:" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ngram_id" order="Asc" />
+            <Field field="n" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="930" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JAMIE~1.LAI\AppData\Local\Temp\Engine_1088_05164043b8d9490297c7ba0f797e6fd0_\Engine_13244_72eb184129514b3b83578c5022dcd903_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="798" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="ngram_id" />
+          </KeyFields>
+          <DataFields>
+            <Field field="ngram_id" selected="False" />
+            <Field field="n" selected="False" />
+            <Field field="2" selected="True" />
+            <Field field="3" selected="True" />
+            <Field field="4" selected="True" />
+            <Field field="5" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
     </Node>
   </Nodes>
   <Connections>
@@ -672,7 +815,7 @@
     </Connection>
     <Connection>
       <Origin ToolID="23" Connection="Output" />
-      <Destination ToolID="36" Connection="Input" />
+      <Destination ToolID="49" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="24" Connection="Output" />
@@ -681,38 +824,6 @@
     <Connection>
       <Origin ToolID="25" Connection="Output" />
       <Destination ToolID="38" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="27" Connection="True" />
-      <Destination ToolID="26" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="27" Connection="False" />
-      <Destination ToolID="28" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="28" Connection="True" />
-      <Destination ToolID="29" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="28" Connection="False" />
-      <Destination ToolID="30" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="30" Connection="True" />
-      <Destination ToolID="31" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="30" Connection="False" />
-      <Destination ToolID="32" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="32" Connection="True" />
-      <Destination ToolID="33" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="32" Connection="False" />
-      <Destination ToolID="34" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="35" Connection="Output" />
@@ -728,7 +839,63 @@
     </Connection>
     <Connection>
       <Origin ToolID="38" Connection="Output" />
-      <Destination ToolID="27" Connection="Input" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="52" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="57" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="57" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output26" />
+      <Destination ToolID="54" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="54" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Join" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Join" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Join" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Join" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
