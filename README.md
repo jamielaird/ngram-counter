@@ -1,5 +1,5 @@
 # ngram-counter
-A workflow in Alteryx, Python and Tableau to extract and analyse n-grams in a large set of email contet
+A workflow using Alteryx, Python and Tableau to extract and analyse n-grams from a large set of raw email text.
 
 ## Resources
 * [Elegant n-gram generation in Python](http://locallyoptimal.com/blog/2013/01/20/elegant-n-gram-generation-in-python/) - A simple n-gram algorithm using the ZIP function
