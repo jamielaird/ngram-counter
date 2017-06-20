@@ -1,4 +1,4 @@
-# N-gram Counter
+# N-Gram Counter
 A workflow using Alteryx, Python and Tableau to extract and analyse n-grams from a large set of raw email text.
 
 ## Contents
