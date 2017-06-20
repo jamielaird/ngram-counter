@@ -9,7 +9,7 @@ import time
 start_time = time.time()
 
 # Set the length of the ngram
-n = 3
+n = 5
 
 # Set the number of common ngrams to return
 c = 5
@@ -25,7 +25,7 @@ def find_ngrams(input_list, n):
 
 # Define the input and output files
 ihandle = 'C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Prepared Text/Salford_Emails.csv'
-ohandle = 'C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Python Output/ngrams.csv'
+ohandle = 'C:/Users/jamie.laird/OD/My Documents/2017/2017-06-12 Key Phrase Analysis/Python Output/Salford_5grams.csv'
 
 # Create output file
 with open(ohandle, 'w', newline='') as csvfile:
