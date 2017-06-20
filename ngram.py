@@ -39,6 +39,15 @@ with open ('sample-email.csv') as csvfile:
         # Tally occurrences of ngrams for this piece of text
         cnt = Counter(ngram_list)
 
+        # Create output file
+        with open('names10.csv', 'w', newline='') as csvfile:
+            fieldnames = ['email', 'body', 'ngrams', 'top_ngrams']
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+            # Write current record to CSV
+            writer.writeheader()
+            writer.writerow({'email':email, 'body':full_text, 'ngrams':Counter(cnt), 'top_ngrams':Counter(cnt).most_common(c)})
+
         # Print the email address
         print (email)
 
@@ -53,5 +62,3 @@ with open ('sample-email.csv') as csvfile:
         print ('The '+str(c)+' most common '+str(n)+'-grams are: ',(Counter(cnt).most_common(c)))
 
         print('----------------------------------------------')
-
-        continue
