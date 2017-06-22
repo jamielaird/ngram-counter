@@ -7,7 +7,7 @@ from collections import Counter
 # Import the itemgetter module
 from operator import itemgetter
 
-# Import the time module and set start time
+# Import the time module and set the start time
 import time
 start_time = time.time()
 
