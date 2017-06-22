@@ -1,7 +1,7 @@
 # Import the csv module
 import csv
 
-# Import the counter module
+# Import the counter module from collections
 from collections import Counter
 
 # Import the itemgetter module
