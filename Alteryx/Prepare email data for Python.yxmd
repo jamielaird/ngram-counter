@@ -1,0 +1,3018 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.0">
+  <Nodes>
+    <Node ToolID="116">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53.99998" y="54.00003" width="144" height="451" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Inputs</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79.00014" y="98.00003" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV</File>
+              <FormatSpecificOptions>
+                <CodePage>65001</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>99999999999</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Read all CSVs from folder</AnnotationText>
+              <DefaultAnnotationText>*.CSV</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Subject" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="Body" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="From: (Name)" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="From: (Address)" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="From: (Type)" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="To: (Name)" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="To: (Address)" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="To: (Type)" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="CC: (Name)" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="CC: (Address)" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="CC: (Type)" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="BCC: (Name)" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="BCC: (Address)" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="BCC: (Type)" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="Billing Information" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="Categories" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="Importance" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="Mileage" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="Sensitivity" size="1073741823" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79.00007" y="230.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File RecordLimit="" FileFormat="23">aka:sandpit|||select email, COUNT(crms_number)  num_prospects
+
+from ZZ_crms_student 
+
+where client_id = 'HUK_USALFORD'
+	and dead = 0
+and email is not null
+
+
+group by email</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Get count of email addresses in student table</AnnotationText>
+              <DefaultAnnotationText>aka:sandpit
+Table=select email, COUNT(crms_number)  num_prospects
+
+from ZZ_crms_student 
+
+where client_id = 'HUK_USALFORD'
+	and dead = 0
+and email is not null
+
+
+group by email</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="email" size="150" source="File: aka:sandpit|||select email, COUNT(crms_number)  num_prospects&#xA;&#xA;from ZZ_crms_student &#xA;&#xA;where client_id = 'HUK_USALFORD'&#xA;	and dead = 0&#xA;and email is not null&#xA;&#xA;&#xA;group by email" type="V_String" />
+                <Field name="num_prospects" source="File: aka:sandpit|||select email, COUNT(crms_number)  num_prospects&#xA;&#xA;from ZZ_crms_student &#xA;&#xA;where client_id = 'HUK_USALFORD'&#xA;	and dead = 0&#xA;and email is not null&#xA;&#xA;&#xA;group by email" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="78.99998" y="374.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File RecordLimit="" FileFormat="23">aka:sandpit|||select crms_number, email from zz_crms_student where client_id = 'HUK_USALFORD' and dead = 0</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Get email addresses and crms numbers</AnnotationText>
+              <DefaultAnnotationText>aka:sandpit
+Table=select crms_number, email from zz_crms_student where client_id = 'HUK_USALFORD' and dead = 0</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="crms_number" source="File: aka:sandpit|||select crms_number, email from zz_crms_student where client_id = 'HUK_USALFORD' and dead = 0" type="Int32" />
+                <Field name="email" size="150" source="File: aka:sandpit|||select crms_number, email from zz_crms_student where client_id = 'HUK_USALFORD' and dead = 0" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="114">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="221.9999" y="54.00002" width="1116" height="370" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Read CSV files, prep and match with CRMS numbers</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="246.9999" y="98.00009" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="Subject" selected="True" />
+                <Field field="Body" selected="True" />
+                <Field field="From: (Name)" selected="True" />
+                <Field field="From: (Address)" selected="True" />
+                <Field field="From: (Type)" selected="True" />
+                <Field field="To: (Name)" selected="True" />
+                <Field field="To: (Address)" selected="True" />
+                <Field field="To: (Type)" selected="True" />
+                <Field field="CC: (Name)" selected="True" />
+                <Field field="CC: (Address)" selected="True" />
+                <Field field="CC: (Type)" selected="True" />
+                <Field field="BCC: (Name)" selected="True" />
+                <Field field="BCC: (Address)" selected="True" />
+                <Field field="BCC: (Type)" selected="True" />
+                <Field field="Billing Information" selected="True" />
+                <Field field="Categories" selected="True" />
+                <Field field="Importance" selected="True" />
+                <Field field="Mileage" selected="True" />
+                <Field field="Sensitivity" selected="True" />
+                <Field field="FileName" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Resize fields</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Subject" size="908" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="Body" size="104066" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="From: (Name)" size="117" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="From: (Address)" size="76" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_String" />
+                <Field name="From: (Type)" size="4" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="String" />
+                <Field name="To: (Name)" size="6203" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="To: (Address)" size="6224" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_String" />
+                <Field name="To: (Type)" size="1279" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_String" />
+                <Field name="CC: (Name)" size="5654" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_WString" />
+                <Field name="CC: (Address)" size="5654" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_String" />
+                <Field name="CC: (Type)" size="1259" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="V_String" />
+                <Field name="BCC: (Name)" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="Bool" />
+                <Field name="BCC: (Address)" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="Bool" />
+                <Field name="BCC: (Type)" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="Bool" />
+                <Field name="Billing Information" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="Bool" />
+                <Field name="Categories" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="Bool" />
+                <Field name="Importance" size="6" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="String" />
+                <Field name="Mileage" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="Bool" />
+                <Field name="Sensitivity" size="6" source="File: C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\CSVs\*.CSV" type="String" />
+                <Field name="FileName" size="19" source="File: FileName" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="331.0001" y="98.00011" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>email_id</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Add email id</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="427.0001" y="98.00002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Subject" selected="True" type="WString" size="908" />
+                <SelectField field="Body" selected="True" type="V_WString" size="104066" />
+                <SelectField field="From: (Name)" selected="False" />
+                <SelectField field="From: (Type)" selected="False" />
+                <SelectField field="To: (Name)" selected="False" />
+                <SelectField field="To: (Type)" selected="False" />
+                <SelectField field="CC: (Name)" selected="False" />
+                <SelectField field="CC: (Address)" selected="False" />
+                <SelectField field="CC: (Type)" selected="False" />
+                <SelectField field="BCC: (Name)" selected="False" />
+                <SelectField field="BCC: (Address)" selected="False" />
+                <SelectField field="BCC: (Type)" selected="False" />
+                <SelectField field="Billing Information" selected="False" />
+                <SelectField field="Categories" selected="False" />
+                <SelectField field="Importance" selected="False" />
+                <SelectField field="Mileage" selected="False" />
+                <SelectField field="Sensitivity" selected="False" />
+                <SelectField field="FileName" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Select fields</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings>
+            <Position x="511.0001" y="98.00011" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (11)">"From: (Address)","To: (Address)"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">True</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">lower</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Emails to lowercase</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="619" y="98.00007" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>Body</Field>
+                <Operator>IsNotEmpty</Operator>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Remove if body is empty</AnnotationText>
+              <DefaultAnnotationText>!IsEmpty([Body])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="306.9972" y="278.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>num_prospects</Field>
+                <Operator>=</Operator>
+                <Operands>
+                  <Operand>1</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Keep email addresses associated with one record</AnnotationText>
+              <DefaultAnnotationText>[num_prospects] = 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="511.0001" y="278.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="email" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="email" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_email" selected="True" rename="Right_email" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Join with crms numbers</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="619" y="278" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="num_prospects" selected="False" />
+                <SelectField field="Right_email" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Select fields</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="799" y="98.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="From: (Address)" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="email" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Join on email and keep matched records</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1003" y="98.00005" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <SelectFields>
+                <SelectField field="RecordID" selected="True" rename="record_id" />
+                <SelectField field="crms_number" selected="True" />
+                <SelectField field="email" selected="True" />
+                <SelectField field="Subject" selected="True" rename="subject" />
+                <SelectField field="Body" selected="True" rename="body" />
+                <SelectField field="From: (Address)" selected="False" />
+                <SelectField field="To: (Address)" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Field names and order</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1110" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF Uppercase(Left([subject],3))='RE:' THEN 1 &#xA;ELSEIF Uppercase(Left([subject],3))='FW:' THEN 1 &#xA;ELSEIF Uppercase(Left([subject],4))='FWD:' THEN 1 &#xA;ELSE 0 ENDIF" field="is_reply" size="1" type="Bool" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Add boolean "is_reply" field</AnnotationText>
+              <DefaultAnnotationText>is_reply = IF Uppercase(Left([subject],3))='RE:' THEN 1 
+ELSEIF Uppercase(Left([...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="919" y="98.00008" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>Body</Field>
+                <Operator>NotContains</Operator>
+                <Operands>
+                  <Operand><![CDATA[Enquiry from: ]]></Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Remove webforms</AnnotationText>
+              <DefaultAnnotationText>!Contains([Body],"Enquiry from: ")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1219" y="98.00005" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>is_reply</Field>
+                <Operator>IsTrue</Operator>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Split on is_reply field</AnnotationText>
+              <DefaultAnnotationText>[is_reply] = 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="115">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="2898" y="54" width="153" height="338" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Outputs</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="2923" y="98" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\Alteryx DB\Salford_Emails.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Write to Alteryx DB:
+
+Salford_Emails.yxdb</AnnotationText>
+              <DefaultAnnotationText>Salford_Emails.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="113">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="2923" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\jamie.laird\OD\My Documents\2017\2017-06-12 Key Phrase Analysis\Prepared Text\Salford_Emails.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>65001</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Write to CSV:
+
+Salford_Emails.csv</AnnotationText>
+              <DefaultAnnotationText>Salford_Emails.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="102">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1374" y="58" width="1507" height="476" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Use Regex to find split points</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1399" y="135.9995" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[body]" field="body_2" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Duplicate the body field for processing</AnnotationText>
+              <DefaultAnnotationText><![CDATA[body_2 = [body]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1770" y="124.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <SelectFields>
+                <SelectField field="record_id" selected="True" />
+                <SelectField field="crms_number" selected="True" />
+                <SelectField field="email" selected="True" />
+                <SelectField field="subject" selected="True" />
+                <SelectField field="body_2" selected="True" rename="body" />
+                <SelectField field="body" selected="False" />
+                <SelectField field="is_reply" selected="True" />
+                <SelectField field="regex_rule" selected="True" rename="split_on" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Select and rename fields</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1770" y="256.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <SelectFields>
+                <SelectField field="record_id" selected="True" />
+                <SelectField field="crms_number" selected="True" />
+                <SelectField field="email" selected="True" />
+                <SelectField field="subject" selected="True" />
+                <SelectField field="body" selected="False" />
+                <SelectField field="body_2" selected="True" rename="body" />
+                <SelectField field="is_reply" selected="True" />
+                <SelectField field="split_on" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Select and rename fields</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="104">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1650" y="256" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;None&quot;" field="split_on" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Add split_on field set to 'None' for records that could not be split</AnnotationText>
+              <DefaultAnnotationText><![CDATA[split_on = "None"
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="100">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1650" y="124" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Union all successfully split records</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="101">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1482" y="147.9999" width="133.4586" height="19" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Apply Regex rules</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="43">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.001" y="192" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(On.{5,100}[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}.{0,100}wrote:)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(On.{5,100}[A-Z0-9._%+-]+@[...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="44">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.001" y="516.0007" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(El.{5,100}[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}.{0,100}escribió:)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(El.{5,100}[A-Z0-9._%+-]+@[...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="45">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507" y="863.9997" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(On.{5,100}@gmail.com.{0,100}wrote:)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="254" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(On.{5,100}@gmail.com.{0,10...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="46">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.001" y="347.9999" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(On.{5,100}University of Salford.{0,100}wrote:)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(On.{5,100}University of Sa...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="47">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.001" y="1032.005" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(On.{5,100}@salford.ac.uk.{0,100}wrote:)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(On.{5,100}@salford.ac.uk.{...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="48">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651" y="192" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="49">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651" y="348" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="50">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651.001" y="516.0005" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="51">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651.001" y="864.0001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="52">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651.001" y="1032" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="53">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.001" y="1175.989" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(On.{10,250}wrote:)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(On.{10,250}wrote:)
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="54">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651.001" y="1175.998" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="55">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.001" y="683.9997" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(Le.{5,100}[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}.{0,100}a écrit)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(Le.{5,100}[A-Z0-9._%+-]+@[...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="56">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651.001" y="683.9995" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="57">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="192" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 1&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 1"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="58">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="348" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 2&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 2"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="59">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="516.0005" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 3&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 3"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="60">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="683.9993" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 4&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 4"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="61">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="864.0001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 5&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 5"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="62">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="1032" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 6&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 6"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="63">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="1175.999" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 7&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 7"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="64">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.001" y="1332.001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(-------- Original message --------)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(-------- Original message ...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="65">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651.001" y="1331.999" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="66">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="1331.999" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 8&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 8"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="67">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.001" y="1488.002" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(------------------ Original ------------------)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(------------------ Origina...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="68">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="1488" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 9&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 9"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="69">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651.001" y="1488" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="70">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.001" y="1643.99" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(-----Original Message-----)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(-----Original Message-----)
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="71">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="1644" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 10&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 10"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="72">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651" y="1643.992" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="73">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.002" y="1800.004" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(-------- Mensaje original --------)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(-------- Mensaje original ...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="74">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="1800.005" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 11&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 11"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="75">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651" y="1799.998" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="76">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1506.999" y="1956" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(________________________________)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(__________________________...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="77">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="1956.001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 12&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 12"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="78">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651.001" y="1956.001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="79">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.001" y="2124" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(University of Salford &lt;salford@enquiries.uk.com&gt; wrote:)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(University of Salford &lt;sal...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="80">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="2124" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 13&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 13"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="81">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651.001" y="2124" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="82">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.001" y="2280" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(University of Salford &lt;salford@enquiries.uk.com&gt;:)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(University of Salford &lt;sal...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="83">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="2280.003" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 14&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 14"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="84">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651.001" y="2280.005" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="85">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1506.999" y="2435.982" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(From: University of Salford.)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(From: University of Salford.)
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="86">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="2436.001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 15&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 15"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="87">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651.001" y="2436" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="88">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507" y="2579.984" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(From:&quot;&quot;University of Salford&quot;&quot;)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(From:""University of Salfo...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="89">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818" y="2580.001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 16&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 16"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="90">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651" y="2580.001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="91">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.001" y="2735.999" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(From: salford@enquiries.uk.com)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(From: salford@enquiries.uk...
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="92">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="2736.011" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 17&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 17"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="93">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651" y="2736.004" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="94">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1507.001" y="2891.997" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(&lt;salford@enquiries.uk.com&gt;:)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(&lt;salford@enquiries.uk.com&gt;:)
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="95">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="2891.994" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 18&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 18"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="96">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651" y="2892.002" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="97">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+                <Position x="1506.998" y="3047.997" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>body_2</Field>
+                  <RegExExpression value="(&gt;.)" />
+                  <CaseInsensitve value="False" />
+                  <Method>Replace</Method>
+                  <Replace expression="{REGEX_MATCH}">
+                    <CopyUnmatched value="True" />
+                  </Replace>
+                  <ParseSimple>
+                    <SplitToRows value="False" />
+                    <RootName>body_2</RootName>
+                    <NumFields value="3" />
+                    <ErrorHandling>Warn</ErrorHandling>
+                  </ParseSimple>
+                  <ParseComplex>
+                    <Field field="RegExOut1" type="V_WString" size="1073741823" />
+                  </ParseComplex>
+                  <Match>
+                    <Field>body_2_Matched</Field>
+                    <ErrorUnmatched value="False" />
+                  </Match>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Replace:
+(&gt;.)
+{REGEX_MATCH}</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+            </Node>
+            <Node ToolID="98">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1818.001" y="3048.001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="&quot;Rule 19&quot;" field="regex_rule" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[regex_rule = "Rule 19"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="99">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1651" y="3048.001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>body_2</Field>
+                    <Operator>Contains</Operator>
+                    <Operands>
+                      <Operand>{REGEX_MATCH}</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Contains([body_2],"{REGEX_MATCH}")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="111">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="1866" y="112" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>body</Field>
+              <NumFields value="2" />
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>body</RootName>
+              <Delimeters value="{REGEX_MATCH}" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Use the {REGEX_MATCH} token to split body text</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="112">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1950" y="124" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <SelectFields>
+                <SelectField field="record_id" selected="True" />
+                <SelectField field="crms_number" selected="True" />
+                <SelectField field="email" selected="True" />
+                <SelectField field="subject" selected="True" />
+                <SelectField field="body1" selected="True" rename="body" />
+                <SelectField field="body" selected="False" />
+                <SelectField field="is_reply" selected="True" />
+                <SelectField field="split_on" selected="True" />
+                <SelectField field="body2" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="105">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1650" y="388.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;N/A&quot;" field="split_on" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Add split_on field set to 'N/A' for records that were not replies</AnnotationText>
+              <DefaultAnnotationText><![CDATA[split_on = "N/A"
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="103">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="2046" y="128.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Union all records</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="117">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="2154" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>Length([body])&gt;100</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Keep records with length &gt; 100 characters</AnnotationText>
+              <DefaultAnnotationText>Length([body])&gt;100</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="118">
+          <GuiSettings>
+            <Position x="2274" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (11)">"body"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">False</Value>
+              <Value name="Check Box (109)">True</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Remove linebreaks</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="119">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="2370" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>email_id</Field>
+                <Operator>!=</Operator>
+                <Operands>
+                  <Operand>18428</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Remove record causing error</AnnotationText>
+              <DefaultAnnotationText>[email_id] != 18428</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="120">
+          <GuiSettings>
+            <Position x="2478" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (11)">"body"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">True</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">True</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">lower</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Remove punctuation from body field and convert to lowercase</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="121">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="2574" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="122">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2670" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <SelectFields>
+                <SelectField field="RecordID" selected="True" />
+                <SelectField field="email_id" selected="True" />
+                <SelectField field="crms_number" selected="True" />
+                <SelectField field="email" selected="True" />
+                <SelectField field="subject" selected="True" />
+                <SelectField field="body" selected="True" />
+                <SelectField field="is_reply" selected="True" />
+                <SelectField field="split_on" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="123">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="2766" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="crms_number" order="Ascending" />
+                <Field field="email_id" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>crms_number - Ascending
+email_id - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="True" />
+      <Destination ToolID="23" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output26" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="25" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Join" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="True" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="False" />
+      <Destination ToolID="105" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="111" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="112" Connection="Output" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="105" Connection="Output" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="48" Connection="False" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="True" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="49" Connection="False" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="True" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="50" Connection="False" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="True" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="51" Connection="False" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="True" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="52" Connection="False" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="True" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="54" Connection="False" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="56" Connection="False" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="True" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#3" Wireless="True">
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#7" Wireless="True">
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#4" Wireless="True">
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#5" Wireless="True">
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#6" Wireless="True">
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#8" Wireless="True">
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#9" Wireless="True">
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#10" Wireless="True">
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#11" Wireless="True">
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#12" Wireless="True">
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#13" Wireless="True">
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#14" Wireless="True">
+      <Origin ToolID="83" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#15" Wireless="True">
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#16" Wireless="True">
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#17" Wireless="True">
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#18" Wireless="True">
+      <Origin ToolID="95" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#19" Wireless="True">
+      <Origin ToolID="98" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="True" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="65" Connection="False" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="True" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="69" Connection="False" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="True" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="72" Connection="False" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="True" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="75" Connection="False" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="True" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="78" Connection="False" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="True" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="81" Connection="False" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="True" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="84" Connection="False" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="True" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="87" Connection="False" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="True" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="90" Connection="False" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="Output" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="True" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="93" Connection="False" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="True" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="96" Connection="False" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="True" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="99" Connection="False" />
+      <Destination ToolID="104" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="111" Connection="Output" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="103" Connection="Output" />
+      <Destination ToolID="117" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="117" Connection="True" />
+      <Destination ToolID="118" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="118" Connection="Output26" />
+      <Destination ToolID="119" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="119" Connection="True" />
+      <Destination ToolID="120" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="120" Connection="Output26" />
+      <Destination ToolID="121" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="121" Connection="Output" />
+      <Destination ToolID="122" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="122" Connection="Output" />
+      <Destination ToolID="123" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="123" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="123" Connection="Output" />
+      <Destination ToolID="113" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Key Phrase Analysis Consolidated Workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
